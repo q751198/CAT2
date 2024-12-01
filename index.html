@@ -23,6 +23,36 @@
 		================================================== -->
 		<link rel="stylesheet" href="css/style.min.css" type="text/css">
 
+
+		<style>
+			.rotate-on-hover {
+				transition: transform 0.3s ease-in-out !important; /* 강제 적용 */
+			}
+
+			.col:hover .rotate-on-hover {
+				transform: rotate(360deg); 
+			}
+			@keyframes blink {
+				0% {
+					opacity: 1; 
+				}
+				50% {
+					opacity: 0; 
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+
+
+			.__text--second {
+				opacity: 1; /* 기본 상태 */
+			}
+
+			.__text--second.active {
+				animation: blink 0.5s infinite !important; /* active 클래스가 추가된 항목만 애니메이션 */
+			}
+		</style>
 		<!-- Load google font
 		================================================== -->
 		<script type="text/javascript">
@@ -82,6 +112,9 @@
 									<a href="#roadmap"><span>Roadmap</span></a>
 								</li>
 								<li>
+									<a href="#Team"><span>Team</span></a>
+								</li>
+								<li>
 									<a href="https://qcat-wp.gitbook.io/qcat" target="_blank"><span>Whitepaper</span></a>
 								</li>
 							</ul>
@@ -100,7 +133,14 @@
 
 				<!-- start slide -->
 				<div class="__slide __slide--1">
-					<div class="start-screen__content" style="background-image: url(img/slider_img/3.jpg)">
+					<div class="start-screen__content" style="position: relative; overflow: hidden;">
+						<!-- 배경 동영상 -->
+						<video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+							<source src="img/back01.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+				
+						<!-- 기존 콘텐츠 -->
 						<div class="start-screen__content__inner">
 							<div class="grid grid--container">
 								<div class="row">
@@ -114,7 +154,7 @@
 										</p><br>
 										<a class="custom-btn custom-btn--medium custom-btn--style-2" href="https://qcat-wp.gitbook.io/qcat">Whitepaper</a>
 									</div>
-				
+					
 									<!-- 이미지 영역 -->
 									<div class="col col--md-6 col--lg-7">
 										<div style="text-align: right; padding-left: 100px;">
@@ -127,12 +167,20 @@
 					</div>
 				</div>
 				
+				
 
 				<!-- end slide -->
 
 				<!-- start slide -->
 				<div class="__slide __slide--2">
-					<div class="start-screen__content" style="background-image: url(img/slider_img/2.jpg)">
+					<div class="start-screen__content" style="position: relative; overflow: hidden;">
+						<!-- 배경 동영상 -->
+						<video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+							<source src="img/back02.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+
+						<!-- 기존 콘텐츠 -->
 						<div class="start-screen__content__inner">
 							<div class="grid grid--container">
 								<div class="row">
@@ -142,7 +190,7 @@
 											<img class="img-responsive" src="img/cat.png" alt="Smart Solutions" style="max-width: 100%; height: auto; padding-right: 100px;">
 										</div>
 									</div>
-				
+
 									<!-- 텍스트 영역 -->
 									<div class="col col--md-6 col--lg-5">
 										<h2 class="h1 __title">Empowering the Future with Smart Solutions</h2>
@@ -159,6 +207,7 @@
 					</div>
 				</div>
 				<!-- end slide -->
+
 
 			</div>
 			<span class="scroll-discover hide show--md">scroll down <b></b></span>
@@ -202,7 +251,7 @@
 					<div class="row row--md-center">
 						<!-- 이미지 영역 -->
 						<div class="col col--md-5 col--lg-6 col--no-gutters">
-							<img class="img-responsive" src="img/img_4.1.jpg" alt="QCAT Ecosystem" style="margin-left: auto; max-width: 570px;">
+							<img class="img-responsive" src="img/img_4.1.jpg" alt="QCAT Ecosystem" style="margin-left: auto; max-width: 500px;">
 						</div>
 					
 						<!-- 텍스트 영역 -->
@@ -239,7 +288,7 @@
 					<div class="row row--md-center row--md-reverse">
 						<!-- 이미지 영역 -->
 						<div class="col col--md-5 col--lg-6 col--no-gutters">
-							<img class="img-responsive" src="img/img_5.png" alt="Global Vision" />
+							<img class="img-responsive" src="img/img_5.png" alt="Global Vision" style="max-width: 500px;"/>
 						</div>
 					
 						<div class="col hide--md col-MB-40"></div>
@@ -292,7 +341,7 @@
 									<div class="__item" data-aos="zoom-in" data-aos-delay="100">
 										<div class="__content">
 											<i class="__ico">
-												<img class="img-responsive lazy" src="img/blank.gif" data-src="img/feature_img/10_1.png" width="51" height="90" alt="demo" />
+												<img class="img-responsive lazy rotate-on-hover" src="img/blank.gif" data-src="img/feature_img/10_1.png" width="51" height="90" alt="demo" />
 											</i>
 											<h3 class="__title">OT-OCN</h3>
 											<p>
@@ -308,7 +357,7 @@
 									<div class="__item" data-aos="zoom-in" data-aos-delay="200">
 										<div class="__content">
 											<i class="__ico">
-												<img class="img-responsive lazy" src="img/blank.gif" data-src="img/feature_img/9_1.png" width="51" height="90" alt="demo" />
+												<img class="img-responsive lazy rotate-on-hover" src="img/blank.gif" data-src="img/feature_img/9_1.png" width="51" height="90" alt="demo" />
 											</i>
 											<h3 class="__title">WebChain</h3>
 											<p>
@@ -323,7 +372,7 @@
 									<div class="__item" data-aos="zoom-in" data-aos-delay="300">
 										<div class="__content">
 											<i class="__ico">
-												<img class="img-responsive lazy" src="img/blank.gif" data-src="img/feature_img/5_1.png" width="51" height="90" alt="demo" />
+												<img class="img-responsive lazy rotate-on-hover" src="img/blank.gif" data-src="img/feature_img/5_1.png" width="51" height="90" alt="demo" />
 											</i>
 											<h3 class="__title">QCAT</h3>
 											<p>
@@ -338,7 +387,7 @@
 									<div class="__item" data-aos="zoom-in" data-aos-delay="400">
 										<div class="__content">
 											<i class="__ico">
-												<img class="img-responsive lazy" src="img/blank.gif" data-src="img/feature_img/12_1.png" width="51" height="90" alt="demo" />
+												<img class="img-responsive lazy rotate-on-hover" src="img/blank.gif" data-src="img/feature_img/12_1.png" width="51" height="90" alt="demo" />
 											</i>
 											<h3 class="__title">FireCAT</h3>
 											<p>
@@ -353,7 +402,7 @@
 									<div class="__item" data-aos="zoom-in" data-aos-delay="500">
 										<div class="__content">
 											<i class="__ico">
-												<img class="img-responsive lazy" src="img/blank.gif" data-src="img/feature_img/7_1.png" width="51" height="90" alt="demo" />
+												<img class="img-responsive lazy rotate-on-hover" src="img/blank.gif" data-src="img/feature_img/7_1.png" width="51" height="90" alt="demo" />
 											</i>
 											<h3 class="__title">Ammit</h3>
 											<p>
@@ -368,7 +417,7 @@
 									<div class="__item" data-aos="zoom-in" data-aos-delay="600">
 										<div class="__content">
 											<i class="__ico">
-												<img class="img-responsive lazy" src="img/blank.gif" data-src="img/feature_img/3_1.png" width="51" height="90" alt="demo" />
+												<img class="img-responsive lazy rotate-on-hover" src="img/blank.gif" data-src="img/feature_img/3_1.png" width="51" height="90" alt="demo" />
 											</i>
 											<h3 class="__title">Anubis</h3>
 											<p>
@@ -403,6 +452,20 @@
 						}
 					}
 				</style>
+				<style>
+					.rotate {
+						animation: rotateAnimation 0.5s ease-in-out;
+					}
+			
+					@keyframes rotateAnimation {
+						from {
+							transform: rotate(0deg);
+						}
+						to {
+							transform: rotate(360deg);
+						}
+					}
+				</style>
 
 				<div class="grid grid--container">
 					<div class="row row--xs-center">
@@ -415,7 +478,7 @@
 								<p>
 									Discover the future of digital innovation with QCAT's comprehensive suite of solutions.
 								</p>
-								<img src="img/eco02.png" alt="Ecosystem Image" class="img-responsive" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+								<img src="img/eco02.png" alt="Ecosystem Image" class="img-responsive img-rotate" style="max-width: 100%; height: auto; margin-bottom: 15px;">
 							</div>
 						</div>
 
@@ -504,7 +567,8 @@
 				</div>
 			</section>
 			<!-- end section -->
-			<!-- start section -->
+			
+			<!-- start roadmap section -->
 			<section id="roadmap" class="section jarallax" data-speed="0.5">
 				<img class="jarallax-img" src="img/bg_6.jpg" alt="demo" />
 
@@ -582,7 +646,253 @@
 
 				</div>
 			</section>
-			<!-- end section -->
+			<!-- end roadmap section -->
+			 			
+			<!-- start team section -->
+			<section class="section">
+				<div class="grid grid--container">
+					<div class="section-heading section-heading--center  col-MB-60">
+						<h5 class="__subtitle">Team</h5>
+
+						<h2 class="__title">Our Awesome Team</h2>
+					</div>
+
+					<!-- start team -->
+					<div id="Team" class="team team--style-1">
+						<div class="__inner">
+							<div class="row">
+								<!-- start item -->
+								<div class="col col--sm-6 col--lg-4">
+									<div class="__item  text--center" data-aos="zoom-in" data-aos-delay="100">
+										<figure class="__image  center-block circled">
+											<img class="img-responsive circled lazy" src="img/blank.gif" data-src="img/team_img/1_b.png" width="230" height="230" alt="demo" />
+
+											<div class="social-btns">
+												<a class="fontello-facebook  circled" href="#"></a>
+											</div>
+										</figure>
+
+										<div class="__content">
+											<h7 class="__title">CEO</h7>
+											<h5 class="__title">David Drake</h5>
+						
+											<p>
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- end item -->
+
+								<!-- start item -->
+								<div class="col col--sm-6 col--lg-4">
+									<div class="__item  text--center" data-aos="zoom-in" data-aos-delay="200">
+										<figure class="__image  center-block circled">
+											<img class="img-responsive circled lazy" src="img/blank.gif" data-src="img/team_img/2_b.png" width="230" height="230" alt="demo" />
+
+											<div class="social-btns">
+												<a class="fontello-linkedin  circled" href="#"></a>
+											</div>
+										</figure>
+
+										<div class="__content">
+											<h7 class="__title">CTO</h7>
+											<h5 class="__title">Ann Balock</h5>
+						
+											<p>
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- end item -->
+
+								<!-- start item -->
+								<div class="col col--sm-6 col--lg-4">
+									<div class="__item  text--center" data-aos="zoom-in" data-aos-delay="300">
+										<figure class="__image  center-block circled">
+											<img class="img-responsive circled lazy" src="img/blank.gif" data-src="img/team_img/3_b.png" width="230" height="230" alt="demo" />
+
+											<div class="social-btns">
+												<a class="fontello-gplus  circled" href="#"></a>
+											</div>
+										</figure>
+
+										<div class="__content">
+											<h7 class="__title">COO</h7>
+											<h5 class="__title">Vladimir Nikitin</h5>
+						
+											<p>
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- end item -->
+							</div>
+						</div>
+					</div>
+					<!-- end team -->
+				</div>
+			</section>
+			<!-- end team section -->
+
+			<!-- start partner section -->
+			<section class="section section--light-blue-bg section--custom-07">
+				<style type="text/css">
+					.section--custom-07
+					{
+						background-image: url(img/sectoin_bg_4.png);
+						background-position: 50% 50%;
+						background-repeat: no-repeat;
+					}
+				</style>
+
+				<div id="partner" class="grid grid--container">
+					<div class="section-heading section-heading--center  col-MB-60">
+						<h5 class="__subtitle">Partner</h5>
+
+						<h2 class="__title">Innovating Together</h2>
+					</div>
+
+					<!-- start team -->
+					<div class="team team--style-2 team--dark-color">
+						<div class="__inner">
+							<div class="row">
+								<!-- start item -->
+								<div class="col col--xs-6 col--sm-4 col--md-3 col--lg-2">
+									<div class="__item  text--center" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="300" data-aos-delay="50">
+										<figure class="__image  center-block circled">
+											<img class="img-responsive circled lazy" src="img/blank.gif" data-src="img/team_img/1.png" width="110" height="110" alt="demo" />
+
+											<div class="social-btns">
+												<a class="fontello-linkedin  circled" href="#"></a>
+											</div>
+										</figure>
+
+										<div class="__content">
+											<h5 class="__title">Partner 1</h5>
+										</div>
+									</div>
+								</div>
+								<!-- end item -->
+
+								<!-- start item -->
+								<div class="col col--xs-6 col--sm-4 col--md-3 col--lg-2">
+									<div class="__item  text--center" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="300" data-aos-delay="100">
+										<figure class="__image  center-block circled">
+											<img class="img-responsive circled lazy" src="img/blank.gif" data-src="img/team_img/2.png" width="110" height="110" alt="demo" />
+
+											<div class="social-btns">
+												<a class="fontello-linkedin  circled" href="#"></a>
+											</div>
+										</figure>
+
+										<div class="__content">
+											<h5 class="__title">Partner 2</h5>
+										</div>
+									</div>
+								</div>
+								<!-- end item -->
+
+								<!-- start item -->
+								<div class="col col--xs-6 col--sm-4 col--md-3 col--lg-2">
+									<div class="__item  text--center" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="300" data-aos-delay="150">
+										<figure class="__image  center-block circled">
+											<img class="img-responsive circled lazy" src="img/blank.gif" data-src="img/team_img/3.png" width="110" height="110" alt="demo" />
+
+											<div class="social-btns">
+												<a class="fontello-facebook  circled" href="#"></a>
+											</div>
+										</figure>
+
+										<div class="__content">
+											<h5 class="__title">Partner 3</h5>
+										</div>
+									</div>
+								</div>
+								<!-- end item -->
+
+								<!-- start item -->
+								<div class="col col--xs-6 col--sm-4 col--md-3 col--lg-2">
+									<div class="__item  text--center" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="300" data-aos-delay="200">
+										<figure class="__image  center-block circled">
+											<img class="img-responsive circled lazy" src="img/blank.gif" data-src="img/team_img/4.png" width="110" height="110" alt="demo" />
+
+											<div class="social-btns">
+												<a class="fontello-gplus  circled" href="#"></a>
+											</div>
+										</figure>
+
+										<div class="__content">
+											<h5 class="__title">Partner 4</h5>
+										</div>
+									</div>
+								</div>
+								<!-- end item -->
+
+								<!-- start item -->
+								<div class="col col--xs-6 col--sm-4 col--md-3 col--lg-2">
+									<div class="__item  text--center" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="300" data-aos-delay="250">
+										<figure class="__image  center-block circled">
+											<img class="img-responsive circled lazy" src="img/blank.gif" data-src="img/team_img/5.png" width="110" height="110" alt="demo" />
+
+											<div class="social-btns">
+												<a class="fontello-facebook  circled" href="#"></a>
+											</div>
+										</figure>
+
+										<div class="__content">
+											<h5 class="__title">Partner 5</h5>
+										</div>
+									</div>
+								</div>
+								<!-- end item -->
+
+								<!-- start item -->
+								<div class="col col--xs-6 col--sm-4 col--md-3 col--lg-2">
+									<div class="__item  text--center" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="300" data-aos-delay="300">
+										<figure class="__image  center-block circled">
+											<img class="img-responsive circled lazy" src="img/blank.gif" data-src="img/team_img/6.png" width="110" height="110" alt="demo" />
+
+											<div class="social-btns">
+												<a class="fontello-facebook  circled" href="#"></a>
+											</div>
+										</figure>
+
+										<div class="__content">
+											<h5 class="__title">Partner 6</h5>
+										</div>
+									</div>
+								</div>
+								<!-- end item -->
+
+								<!-- start item -->
+								<div class="col col--xs-6 col--sm-4 col--md-3 col--lg-2">
+									<div class="__item  text--center" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="300" data-aos-delay="350">
+										<figure class="__image  center-block circled">
+											<img class="img-responsive circled lazy" src="img/blank.gif" data-src="img/team_img/7.png" width="110" height="110" alt="demo" />
+
+											<div class="social-btns">
+												<a class="fontello-facebook  circled" href="#"></a>
+											</div>
+										</figure>
+
+										<div class="__content">
+											<h5 class="__title">Partner 7</h5>
+										</div>
+									</div>
+								</div>
+								<!-- end item -->
+
+								
+							</div>
+						</div>
+					</div>
+					<!-- end team -->
+				</div>
+			</section>
+			<!-- end partner section -->
 
 
 <!-- start footer -->
@@ -635,6 +945,36 @@
 			e.src='https://www.google-analytics.com/analytics.js';
 			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
 			ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+		</script>
+		<script>
+			$(document).ready(function () {
+				$('.feature--slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+					$('img.img-rotate').removeClass('rotate');
+				});
+	
+				$('.feature--slider').on('afterChange', function (event, slick, currentSlide) {
+					$('img.img-rotate').addClass('rotate');
+				});
+			});
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const items = document.querySelectorAll(".__text--second");
+				let currentIndex = 0; // 현재 활성화된 요소 인덱스
+
+				function activateNextItem() {
+					items.forEach((item, index) => {
+						if (index === currentIndex) {
+							item.classList.add("active"); // 현재 인덱스에 active 추가
+						} else {
+							item.classList.remove("active"); // 나머지에서 active 제거
+						}
+					});
+					currentIndex = (currentIndex + 1) % items.length; // 인덱스 순환
+				}
+
+				setInterval(activateNextItem, 2000); // 2초 간격으로 실행
+			});
 		</script>
 	</body>
 </html>
