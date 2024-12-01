@@ -26,7 +26,15 @@
 
 
 		<style>
+			/* 소셜 아이콘 간격 조정 */
+			ul li.social-icon {
+				margin-left: 15px !important; /* 원하는 간격으로 조정 */
+			}
 
+			/* 마지막 소셜 아이콘의 여백 제거 */
+			ul li.social-icon:last-child {
+				margin-left: 0;
+			}
 
 			.rotate-on-hover {
 				transition: transform 0.3s ease-in-out !important; /* 강제 적용 */
@@ -131,23 +139,28 @@
 								</li>
 								 <!-- Social icons -->
 								 <li>
-									<a href="t.me/Qcat_Official" target="_blank">
-										<i class="fab fa-telegram-plane"></i>
+									<a href="https://t.me/Qcat_Official" target="_blank">
+										<i class="fab fa-telegram-plane" style="color: #43C1a8;"></i>
 									</a>
 								</li>
-								<li>
+								<li class="social-icon">
 									<a href="https://medium.com/@QCATOfficial" target="_blank">
-										<i class="fab fa-medium"></i>
+										<i class="fab fa-medium" style="color: #43C1a8;"></i>
 									</a>
 								</li>
-								<li>
+								<li class="social-icon">
 									<a href="https://x.com/smartqcat" target="_blank">
-										<i class="fab fa-twitter"></i>
+										<i class="fab fa-twitter" style="color: #43C1a8;"></i>
 									</a>
 								</li>
-								<li>
+								<li class="social-icon">
+									<a href="https://www.catscan.cloud/tx/all" target="_blank">
+										<i class="fas fa-database" style="color: #43C1a8;"></i>
+									</a>
+								</li>
+								<li class="social-icon">
 									<a href="https://play.google.com/store/apps/details?id=com.cyberadvancedtech.qcatwebchainwallet" target="_blank">
-										<i class="fab fa-google-play"></i>
+										<i class="fab fa-google-play" style="color: #43C1a8;"></i>
 									</a>
 								</li>
 							</ul>
