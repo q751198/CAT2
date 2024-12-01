@@ -52,6 +52,12 @@
 			.__text--second.active {
 				animation: blink 0.5s infinite !important; /* active 클래스가 추가된 항목만 애니메이션 */
 			}
+
+			@media (max-width: 768px) {
+				.hide-on-mobile {
+					display: none;
+				}
+			}
 		</style>
 		<!-- Load google font
 		================================================== -->
@@ -115,6 +121,9 @@
 									<a href="#Team"><span>Team</span></a>
 								</li>
 								<li>
+									<a href="#partner"><span>Partner</span></a>
+								</li>
+								<li>
 									<a href="https://qcat-wp.gitbook.io/qcat" target="_blank"><span>Whitepaper</span></a>
 								</li>
 							</ul>
@@ -156,7 +165,7 @@
 									</div>
 					
 									<!-- 이미지 영역 -->
-									<div class="col col--md-6 col--lg-7">
+									<div class="col col--md-6 col--lg-7 hide-on-mobile">
 										<div style="text-align: right; padding-left: 100px;">
 											<img class="img-responsive" src="img/main.png" alt="AI-QCAT Visual" style="max-width: 100%; height: auto;">
 										</div>
@@ -738,7 +747,7 @@
 			<!-- end team section -->
 
 			<!-- start partner section -->
-			<section class="section section--light-blue-bg section--custom-07">
+			<section id="partner" class="section section--light-blue-bg section--custom-07">
 				<style type="text/css">
 					.section--custom-07
 					{
