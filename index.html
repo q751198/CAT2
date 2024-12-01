@@ -68,6 +68,12 @@
 				.hide-on-mobile {
 					display: none;
 				}
+				.img-mobile-fix {
+					max-width: 100%; /* 부모 요소의 너비를 초과하지 않음 */
+					height: auto; /* 비율 유지 */
+					margin: 0 auto; /* 중앙 정렬 */
+					display: block; /* 블록 요소로 변경 */
+					}
 			}
 		</style>
 		<!-- Load google font
@@ -297,7 +303,7 @@
 					<div class="row row--md-center">
 						<!-- 이미지 영역 -->
 						<div class="col col--md-5 col--lg-6 col--no-gutters">
-							<img class="img-responsive" src="img/img_4.1.jpg" alt="QCAT Ecosystem" style="margin-left: auto; max-width: 500px;">
+							<img class="img-responsive img-mobile-fix" src="img/img_4.1.jpg" alt="QCAT Ecosystem">
 						</div>
 					
 						<!-- 텍스트 영역 -->
@@ -334,7 +340,7 @@
 					<div class="row row--md-center row--md-reverse">
 						<!-- 이미지 영역 -->
 						<div class="col col--md-5 col--lg-6 col--no-gutters">
-							<img class="img-responsive" src="img/img_5.png" alt="Global Vision" style="max-width: 500px;"/>
+							<img class="img-responsive img-mobile-fix" src="img/img_5.png" alt="Global Vision">
 						</div>
 					
 						<div class="col hide--md col-MB-40"></div>
