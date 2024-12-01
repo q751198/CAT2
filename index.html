@@ -22,9 +22,12 @@
 		<!-- CSS
 		================================================== -->
 		<link rel="stylesheet" href="css/style.min.css" type="text/css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
 
 		<style>
+
+
 			.rotate-on-hover {
 				transition: transform 0.3s ease-in-out !important; /* 강제 적용 */
 			}
@@ -50,7 +53,7 @@
 			}
 
 			.__text--second.active {
-				animation: blink 0.5s infinite !important; /* active 클래스가 추가된 항목만 애니메이션 */
+				animation: blink 0.5s forwards !important; /* active 클래스가 추가된 항목만 애니메이션 */
 			}
 
 			@media (max-width: 768px) {
@@ -125,6 +128,27 @@
 								</li>
 								<li>
 									<a href="https://qcat-wp.gitbook.io/qcat" target="_blank"><span>Whitepaper</span></a>
+								</li>
+								 <!-- Social icons -->
+								 <li>
+									<a href="t.me/Qcat_Official" target="_blank">
+										<i class="fab fa-telegram-plane"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://medium.com/@QCATOfficial" target="_blank">
+										<i class="fab fa-medium"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://x.com/smartqcat" target="_blank">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://play.google.com/store/apps/details?id=com.cyberadvancedtech.qcatwebchainwallet" target="_blank">
+										<i class="fab fa-google-play"></i>
+									</a>
 								</li>
 							</ul>
 						</nav>
@@ -597,7 +621,7 @@
 									<div class="__item __item--active">
 										<i class="__point"></i>
 										<span class="__text __text--first">2024</span>
-										<h5 class="__text __text--second">Establishing <br>the Foundation</h5>
+										<h5 class="__text __text--second" style="font-size: 15px;">Establishing <br>the Foundation</h5>
 									</div>
 									<span class="__line __line--active"></span>
 
@@ -605,7 +629,7 @@
 									<div class="__item __item--active">
 										<i class="__point"></i>
 										<span class="__text __text--first">Q4 2024</span>
-										<h5 class="__text __text--second">Core Development</h5>
+										<h5 class="__text __text--second" style="font-size: 15px;"><br><br>Core Development</h5>
 									</div>
 									<span class="__line __line--active"></span>
 
@@ -613,7 +637,7 @@
 									<div class="__item __item--active">
 										<i class="__point"></i>
 										<span class="__text __text--first">2025</span>
-										<h5 class="__text __text--second">Official Launch <br>and Growth</h5>
+										<h5 class="__text __text--second" style="font-size: 15px;">Official Launch <br>and Growth</h5>
 									</div>
 									<span class="__line __line--active"></span>
 
@@ -621,7 +645,7 @@
 									<div class="__item __item--active">
 										<i class="__point"></i>
 										<span class="__text __text--first">2026</span>
-										<h5 class="__text __text--second">Advanced <br>Development</h5>
+										<h5 class="__text __text--second" style="font-size: 15px;"><br><br>Advanced <br>Development</h5>
 									</div>
 									<span class="__line __line--active"></span>
 
@@ -629,7 +653,7 @@
 									<div class="__item __item--active">
 										<i class="__point"></i>
 										<span class="__text __text--first">2027</span>
-										<h5 class="__text __text--second">Smart City <br>Integration</h5>
+										<h5 class="__text __text--second" style="font-size: 15px;">Smart City <br>Integration</h5>
 									</div>
 									<span class="__line __line--active"></span>
 
@@ -637,7 +661,7 @@
 									<div class="__item __item--active">
 										<i class="__point"></i>
 										<span class="__text __text--first">2028</span>
-										<h5 class="__text __text--second">Governance <br>& Maturity</h5>
+										<h5 class="__text __text--second" style="font-size: 15px;"><br><br>Governance <br>& Maturity</h5>
 									</div>
 									<span class="__line"></span>
 
@@ -645,7 +669,7 @@
 									<div class="__item">
 										<i class="__point"></i>
 										<span class="__text __text--first">2029 & Beyond</span>
-										<h5 class="__text __text--second">Sustained Growth</h5>
+										<h5 class="__text __text--second" style="font-size: 15px;">Sustained Growth</h5>
 									</div>
 								</div>
 							</div>
@@ -658,7 +682,7 @@
 			<!-- end roadmap section -->
 			 			
 			<!-- start team section -->
-			<section class="section">
+			<section id="Team" class="section">
 				<div class="grid grid--container">
 					<div class="section-heading section-heading--center  col-MB-60">
 						<h5 class="__subtitle">Team</h5>
@@ -667,7 +691,7 @@
 					</div>
 
 					<!-- start team -->
-					<div id="Team" class="team team--style-1">
+					<div class="team team--style-1">
 						<div class="__inner">
 							<div class="row">
 								<!-- start item -->
